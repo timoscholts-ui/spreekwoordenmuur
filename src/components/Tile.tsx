@@ -32,9 +32,6 @@ function TileBorder() {
       {/* Outer border */}
       <rect x="5" y="5" width="390" height="390" fill="none" stroke={C} strokeWidth="7" />
 
-      {/* Inner border */}
-      <rect x="40" y="40" width="320" height="320" fill="none" stroke={C} strokeWidth="2" />
-
       {/* Top scrollwork */}
       <path
         d="M 68,22 C 73,15 83,15 88,22 C 93,29 103,29 108,22 C 113,15 123,15 128,22

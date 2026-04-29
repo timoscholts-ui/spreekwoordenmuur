@@ -70,8 +70,13 @@
     "dateISO": "2026-04-28"
   },
   {
-    "id": "2026-04-29-als-je-voor-een-dubbeltje-geboren-bent",
-    "normalizedKey": "alsjevooreendubbeltjegeborenbentwordjenooiteenkwartje",
+    "id": "2026-04-29-morgenstond-heeft-goud-in-de-mond",
+    "normalizedKey": "morgenstondheeftgoudindemond",
     "dateISO": "2026-04-29"
+  },
+  {
+    "id": "2026-04-30-na-regen-komt-zonneschijn",
+    "normalizedKey": "naregenkomtzonneschijn",
+    "dateISO": "2026-04-30"
   }
 ]

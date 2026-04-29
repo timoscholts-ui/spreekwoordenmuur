@@ -154,14 +154,25 @@
     "askPerplexityUrl": "https://www.perplexity.ai/search?q=wie+kruipt+valt+niet+spreekwoord+betekenis"
   },
   {
-    "id": "2026-04-29-als-je-voor-een-dubbeltje-geboren-bent",
+    "id": "2026-04-29-morgenstond-heeft-goud-in-de-mond",
     "dateISO": "2026-04-29",
     "dateDisplay": "29/04/26",
-    "saying": "Als je voor een dubbeltje geboren bent, word je nooit een kwartje",
-    "literalDunglish": "If you are born a dime, you will never become a quarter",
-    "contextNl": "Pessimistisch gezegde dat stelt dat iemands afkomst zijn toekomst bepaalt. Sociale mobiliteit werd vroeger als beperkt beschouwd — je bleef wat je was.",
-    "explanationEn": "A fatalistic saying meaning your origin determines your fate — you cannot rise above the station you were born into.",
+    "saying": "Morgenstond heeft goud in de mond",
+    "literalDunglish": "Morning hour has gold in its mouth",
+    "contextNl": "Wie vroeg begint, heeft de meeste kans op succes. De dag is nog vers en vol mogelijkheden — de mooiste kansen wachten op degene die als eerste begint.",
+    "explanationEn": "Those who start early have the best chance of success. The early morning brings the finest opportunities — the day is fresh and full of possibility.",
     "type": "spreekwoord",
-    "askPerplexityUrl": "https://www.perplexity.ai/search?q=voor+een+dubbeltje+geboren+kwartje+spreekwoord+betekenis"
+    "askPerplexityUrl": "https://www.perplexity.ai/search?q=Morgenstond+heeft+goud+in+de+mond+spreekwoord+betekenis"
+  },
+  {
+    "id": "2026-04-30-na-regen-komt-zonneschijn",
+    "dateISO": "2026-04-30",
+    "dateDisplay": "30/04/26",
+    "saying": "Na regen komt zonneschijn",
+    "literalDunglish": "After rain comes sunshine",
+    "contextNl": "Na moeilijke tijden volgen altijd betere. Een van de meest troostende Nederlandse uitdrukkingen: elke tegenvaller heeft zijn einde, en achter elke wolkbreuk schijnt de zon alweer.",
+    "explanationEn": "After hard times, better ones always follow. One of the most comforting Dutch sayings: every setback has its end, and sunshine follows every storm.",
+    "type": "spreekwoord",
+    "askPerplexityUrl": "https://www.perplexity.ai/search?q=Na+regen+komt+zonneschijn+spreekwoord+betekenis"
   }
 ]
