@@ -23,8 +23,9 @@ export default function App() {
       items={items}
       layout="grid"
       revealDurationMs={13200}
-      title="Spreekwoordenmuur"
-      subtitle="Een tegel per dag — een Nederlands spreekwoord uitgelegd."
+      eyebrow="Van je collega's"
+      title="Alena's Spreekwoordenmuur"
+      subtitle="Op kantoor leerden we je hoe Nederlanders écht praten. Nu je weg bent, blijven de spreekwoorden komen — elke dag één."
     />
   );
 }

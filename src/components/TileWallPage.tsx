@@ -8,6 +8,7 @@ type TileWallPageProps = {
   items: DelftTileData[];
   layout?: 'grid' | 'masonry';
   revealDurationMs?: number;
+  eyebrow?: string;
   title?: string;
   subtitle?: string;
 };
@@ -16,6 +17,7 @@ export function TileWallPage({
   items,
   layout = 'grid',
   revealDurationMs = 3800,
+  eyebrow = 'Daily Dutch wisdom',
   title = 'Dutch Sayings on Delft Tiles',
   subtitle = 'A growing wall of spreekwoorden, gezegden, and famous quotes.',
 }: TileWallPageProps) {
@@ -57,17 +59,18 @@ export function TileWallPage({
 
       <section className="tile-wall-hero">
         <div className="tile-wall-copy">
-          <p className="tile-wall-eyebrow">Daily Dutch wisdom</p>
+          <p className="tile-wall-eyebrow">{eyebrow}</p>
           <h1>{title}</h1>
           <p>{subtitle}</p>
         </div>
       </section>
 
+      {/* Big overlay — visible during animation, then fades */}
       {newest && (
         <div
           className={[
             'tile-wall-reveal-layer',
-            phase !== 'wall' ? 'is-visible' : '',
+            phase === 'reveal' ? 'is-visible' : '',
             phase === 'settle' ? 'is-settling' : '',
           ]
             .filter(Boolean)
@@ -75,7 +78,7 @@ export function TileWallPage({
           aria-hidden={phase === 'wall'}
         >
           <div className="tile-wall-reveal-shell">
-            <p className="tile-wall-reveal-label">New tile of the day</p>
+            <p className="tile-wall-reveal-label">Tegel van vandaag</p>
             <DelftTile
               data={newest}
               autoReveal
@@ -83,6 +86,20 @@ export function TileWallPage({
             />
           </div>
         </div>
+      )}
+
+      {/* Daily feature tile — persists after animation showing back side */}
+      {newest && phase === 'wall' && (
+        <section className="tile-wall-daily">
+          <div className="tile-wall-daily-shell">
+            <p className="tile-wall-reveal-label">Tegel van vandaag</p>
+            <DelftTile
+              data={newest}
+              defaultFlipped={true}
+              className="tile-wall-feature-tile"
+            />
+          </div>
+        </section>
       )}
 
       <section className="tile-wall-section">
@@ -107,7 +124,7 @@ export function TileWallPage({
             >
               <DelftTile
                 data={newest}
-                defaultFlipped={phase !== 'reveal'}
+                defaultFlipped={phase === 'wall'}
               />
             </div>
           )}

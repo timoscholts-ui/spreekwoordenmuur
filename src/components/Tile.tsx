@@ -20,8 +20,14 @@ function TileBorder() {
       xmlns="http://www.w3.org/2000/svg"
       aria-hidden="true"
     >
-      {/* Tile body */}
-      <rect width="400" height="400" fill="#f5f0e8" />
+      {/* Porcelain tile body */}
+      <rect width="400" height="400" fill="#f8faff" />
+
+      {/* Bevel — top and left highlight */}
+      <path d="M 0,0 L 400,0 L 380,20 L 20,20 L 20,380 L 0,400 Z" fill="rgba(255,255,255,0.6)" />
+
+      {/* Bevel — bottom and right shadow */}
+      <path d="M 400,0 L 400,400 L 0,400 L 20,380 L 380,380 L 380,20 Z" fill="rgba(18,30,56,0.07)" />
 
       {/* Outer border */}
       <rect x="5" y="5" width="390" height="390" fill="none" stroke={C} strokeWidth="7" />

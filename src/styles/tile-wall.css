@@ -129,7 +129,7 @@ body {
 
 .tile-wall-reveal-layer.is-settling {
   opacity: 0;
-  transform: translateY(-6rem) scale(0.74);
+  transform: scale(0.94);
 }
 
 .tile-wall-reveal-shell {
@@ -141,6 +141,25 @@ body {
 .tile-wall-feature-tile {
   width: min(88vw, 27rem);
   filter: drop-shadow(0 28px 38px rgba(18, 30, 56, 0.18));
+}
+
+/* Daily feature tile — persists after animation */
+.tile-wall-daily {
+  width: min(1280px, calc(100% - 2rem));
+  margin: 0 auto;
+  padding: 0.5rem 0 1.5rem;
+  animation: dailyFadeIn 500ms cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+
+.tile-wall-daily-shell {
+  display: grid;
+  justify-items: center;
+  gap: 1rem;
+}
+
+@keyframes dailyFadeIn {
+  from { opacity: 0; transform: translateY(1.5rem) scale(0.97); }
+  to   { opacity: 1; transform: translateY(0) scale(1); }
 }
 
 .tile-wall-section {
