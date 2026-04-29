@@ -29,9 +29,6 @@ function TileBorder() {
       {/* Bevel — bottom and right shadow */}
       <path d="M 400,0 L 400,400 L 0,400 L 20,380 L 380,380 L 380,20 Z" fill="rgba(18,30,56,0.07)" />
 
-      {/* Outer border */}
-      <rect x="5" y="5" width="390" height="390" fill="none" stroke={C} strokeWidth="7" />
-
       {/* Top scrollwork */}
       <path
         d="M 68,22 C 73,15 83,15 88,22 C 93,29 103,29 108,22 C 113,15 123,15 128,22
