@@ -29,60 +29,57 @@ function TileBorder() {
       {/* Bevel — bottom and right shadow */}
       <path d="M 400,0 L 400,400 L 0,400 L 20,380 L 380,380 L 380,20 Z" fill="rgba(18,30,56,0.07)" />
 
-      {/* Top scrollwork */}
+      {/* Top scrollwork — center y=32, oscillates y=25..39, clear of 20px bevel */}
       <path
-        d="M 68,22 C 73,15 83,15 88,22 C 93,29 103,29 108,22 C 113,15 123,15 128,22
-           C 133,29 143,29 148,22 C 153,15 163,15 168,22 C 173,29 183,29 188,22
-           C 193,15 203,15 208,22 C 213,29 223,29 228,22 C 233,15 243,15 248,22
-           C 253,29 263,29 268,22 C 273,15 283,15 288,22 C 293,29 303,29 308,22
-           C 313,15 323,15 328,22"
+        d="M 68,32 C 73,25 83,25 88,32 C 93,39 103,39 108,32 C 113,25 123,25 128,32
+           C 133,39 143,39 148,32 C 153,25 163,25 168,32 C 173,39 183,39 188,32
+           C 193,25 203,25 208,32 C 213,39 223,39 228,32 C 233,25 243,25 248,32
+           C 253,39 263,39 268,32 C 273,25 283,25 288,32 C 293,39 303,39 308,32
+           C 313,25 323,25 328,32"
         fill="none" stroke={C} strokeWidth="1.5" strokeLinecap="round"
       />
 
-      {/* Bottom scrollwork */}
+      {/* Bottom scrollwork — center y=368, oscillates y=361..375 */}
       <path
-        d="M 68,378 C 73,385 83,385 88,378 C 93,371 103,371 108,378 C 113,385 123,385 128,378
-           C 133,371 143,371 148,378 C 153,385 163,385 168,378 C 173,371 183,371 188,378
-           C 193,385 203,385 208,378 C 213,371 223,371 228,378 C 233,385 243,385 248,378
-           C 253,371 263,371 268,378 C 273,385 283,385 288,378 C 293,371 303,371 308,378
-           C 313,385 323,385 328,378"
+        d="M 68,368 C 73,375 83,375 88,368 C 93,361 103,361 108,368 C 113,375 123,375 128,368
+           C 133,361 143,361 148,368 C 153,375 163,375 168,368 C 173,361 183,361 188,368
+           C 193,375 203,375 208,368 C 213,361 223,361 228,368 C 233,375 243,375 248,368
+           C 253,361 263,361 268,368 C 273,375 283,375 288,368 C 293,361 303,361 308,368
+           C 313,375 323,375 328,368"
         fill="none" stroke={C} strokeWidth="1.5" strokeLinecap="round"
       />
 
-      {/* Left scrollwork */}
+      {/* Left scrollwork — center x=32, oscillates x=25..39 */}
       <path
-        d="M 22,68 C 15,73 15,83 22,88 C 29,93 29,103 22,108 C 15,113 15,123 22,128
-           C 29,133 29,143 22,148 C 15,153 15,163 22,168 C 29,173 29,183 22,188
-           C 15,193 15,203 22,208 C 29,213 29,223 22,228 C 15,233 15,243 22,248
-           C 29,253 29,263 22,268 C 15,273 15,283 22,288 C 29,293 29,303 22,308
-           C 15,313 15,323 22,328"
+        d="M 32,68 C 25,73 25,83 32,88 C 39,93 39,103 32,108 C 25,113 25,123 32,128
+           C 39,133 39,143 32,148 C 25,153 25,163 32,168 C 39,173 39,183 32,188
+           C 25,193 25,203 32,208 C 39,213 39,223 32,228 C 25,233 25,243 32,248
+           C 39,253 39,263 32,268 C 25,273 25,283 32,288 C 39,293 39,303 32,308
+           C 25,313 25,323 32,328"
         fill="none" stroke={C} strokeWidth="1.5" strokeLinecap="round"
       />
 
-      {/* Right scrollwork */}
+      {/* Right scrollwork — center x=368, oscillates x=361..375 */}
       <path
-        d="M 378,68 C 385,73 385,83 378,88 C 371,93 371,103 378,108 C 385,113 385,123 378,128
-           C 371,133 371,143 378,148 C 385,153 385,163 378,168 C 371,173 371,183 378,188
-           C 385,193 385,203 378,208 C 371,213 371,223 378,228 C 385,233 385,243 378,248
-           C 371,253 371,263 378,268 C 385,273 385,283 378,288 C 371,293 371,303 378,308
-           C 385,313 385,323 378,328"
+        d="M 368,68 C 375,73 375,83 368,88 C 361,93 361,103 368,108 C 375,113 375,123 368,128
+           C 361,133 361,143 368,148 C 375,153 375,163 368,168 C 361,173 361,183 368,188
+           C 375,193 375,203 368,208 C 361,213 361,223 368,228 C 375,233 375,243 368,248
+           C 361,253 361,263 368,268 C 375,273 375,283 368,288 C 361,293 361,303 368,308
+           C 375,313 375,323 368,328"
         fill="none" stroke={C} strokeWidth="1.5" strokeLinecap="round"
       />
 
-      {/* Corner dots */}
-      <circle cx="22" cy="22" r="4" fill={C} opacity="0.55" />
-      <circle cx="378" cy="22" r="4" fill={C} opacity="0.55" />
-      <circle cx="22" cy="378" r="4" fill={C} opacity="0.55" />
-      <circle cx="378" cy="378" r="4" fill={C} opacity="0.55" />
+      {/* Corner dots — 34px from each edge, inside bevel */}
+      <circle cx="34" cy="34" r="4" fill={C} opacity="0.55" />
+      <circle cx="366" cy="34" r="4" fill={C} opacity="0.55" />
+      <circle cx="34" cy="366" r="4" fill={C} opacity="0.55" />
+      <circle cx="366" cy="366" r="4" fill={C} opacity="0.55" />
 
-      {/* Corner "Pp" — top-left */}
-      <text x="11" y="37" fontFamily="Times New Roman, serif" fontStyle="italic" fontWeight="bold" fontSize="20" fill={C}>Pp</text>
-      {/* Corner "Pp" — top-right */}
-      <text x="389" y="37" textAnchor="end" fontFamily="Times New Roman, serif" fontStyle="italic" fontWeight="bold" fontSize="20" fill={C}>Pp</text>
-      {/* Corner "Pp" — bottom-left */}
-      <text x="11" y="393" fontFamily="Times New Roman, serif" fontStyle="italic" fontWeight="bold" fontSize="20" fill={C}>Pp</text>
-      {/* Corner "Pp" — bottom-right */}
-      <text x="389" y="393" textAnchor="end" fontFamily="Times New Roman, serif" fontStyle="italic" fontWeight="bold" fontSize="20" fill={C}>Pp</text>
+      {/* Corner "Pp" — all positioned inside safe zone (>20px from edge) */}
+      <text x="26" y="60" fontFamily="Times New Roman, serif" fontStyle="italic" fontWeight="bold" fontSize="20" fill={C}>Pp</text>
+      <text x="374" y="60" textAnchor="end" fontFamily="Times New Roman, serif" fontStyle="italic" fontWeight="bold" fontSize="20" fill={C}>Pp</text>
+      <text x="26" y="372" fontFamily="Times New Roman, serif" fontStyle="italic" fontWeight="bold" fontSize="20" fill={C}>Pp</text>
+      <text x="374" y="372" textAnchor="end" fontFamily="Times New Roman, serif" fontStyle="italic" fontWeight="bold" fontSize="20" fill={C}>Pp</text>
     </svg>
   );
 }
