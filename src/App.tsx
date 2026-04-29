@@ -22,7 +22,7 @@ export default function App() {
     <TileWallPage
       items={items}
       layout="grid"
-      revealDurationMs={3800}
+      revealDurationMs={13200}
       title="Spreekwoordenmuur"
       subtitle="Een tegel per dag — een Nederlands spreekwoord uitgelegd."
     />
