@@ -1,0 +1,241 @@
+/* src/styles/tile-wall.css */
+:root {
+  --wall-bg-top: #eff3f9;
+  --wall-bg-bottom: #dfe7f1;
+  --wall-surface: rgba(255, 255, 255, 0.54);
+  --wall-surface-strong: rgba(255, 255, 255, 0.8);
+  --wall-text: #223355;
+  --wall-text-soft: rgba(34, 51, 85, 0.74);
+  --wall-line: rgba(42, 77, 143, 0.14);
+  --wall-shadow: rgba(18, 30, 56, 0.12);
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  background:
+    radial-gradient(circle at top, rgba(255, 255, 255, 0.92) 0%, rgba(255, 255, 255, 0) 26%),
+    linear-gradient(180deg, var(--wall-bg-top) 0%, var(--wall-bg-bottom) 100%);
+  color: var(--wall-text);
+}
+
+.tile-wall-page {
+  min-height: 100vh;
+  position: relative;
+  overflow-x: clip;
+}
+
+.tile-wall-page::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  background:
+    linear-gradient(rgba(42, 77, 143, 0.04) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(42, 77, 143, 0.04) 1px, transparent 1px);
+  background-size: 28px 28px;
+  mask-image: linear-gradient(180deg, rgba(0, 0, 0, 0.22), rgba(0, 0, 0, 0.02));
+}
+
+.tile-wall-skip {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  transform: translateY(-160%);
+  padding: 0.75rem 1rem;
+  border-radius: 999px;
+  background: white;
+  color: var(--wall-text);
+  z-index: 30;
+}
+.tile-wall-skip:focus { transform: translateY(0); }
+
+.tile-wall-hero,
+.tile-wall-section {
+  width: min(1280px, calc(100% - 2rem));
+  margin: 0 auto;
+}
+
+.tile-wall-hero {
+  padding: clamp(1.5rem, 2vw, 2rem) 0 1rem;
+}
+
+.tile-wall-copy {
+  display: grid;
+  gap: 0.85rem;
+  max-width: 58rem;
+  padding: clamp(1.25rem, 2vw, 1.75rem);
+  border: 1px solid var(--wall-line);
+  border-radius: 24px;
+  background: linear-gradient(180deg, var(--wall-surface-strong), var(--wall-surface));
+  box-shadow: 0 12px 30px var(--wall-shadow);
+  backdrop-filter: blur(10px);
+}
+
+.tile-wall-eyebrow,
+.tile-wall-section-label,
+.tile-wall-reveal-label {
+  margin: 0;
+  font-size: 0.78rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  font-weight: 800;
+  color: #2a4d8f;
+}
+
+.tile-wall-copy h1,
+.tile-wall-section-header h2 {
+  margin: 0;
+  line-height: 1.05;
+  letter-spacing: -0.03em;
+}
+
+.tile-wall-copy h1 {
+  font-size: clamp(2rem, 4vw, 4.2rem);
+}
+
+.tile-wall-copy p,
+.tile-wall-section-text {
+  margin: 0;
+  max-width: 58ch;
+  color: var(--wall-text-soft);
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.tile-wall-reveal-layer {
+  position: sticky;
+  top: 0;
+  z-index: 20;
+  min-height: clamp(24rem, 74vh, 46rem);
+  display: grid;
+  place-items: center;
+  padding: 1.5rem 1rem 2rem;
+  opacity: 0;
+  pointer-events: none;
+  transform: scale(1.02);
+  transition:
+    opacity 380ms ease,
+    transform 900ms cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.tile-wall-reveal-layer.is-visible {
+  opacity: 1;
+  pointer-events: auto;
+  transform: scale(1);
+}
+
+.tile-wall-reveal-layer.is-settling {
+  opacity: 0;
+  transform: translateY(-6rem) scale(0.74);
+}
+
+.tile-wall-reveal-shell {
+  display: grid;
+  justify-items: center;
+  gap: 1rem;
+}
+
+.tile-wall-feature-tile {
+  width: min(88vw, 27rem);
+  filter: drop-shadow(0 28px 38px rgba(18, 30, 56, 0.18));
+}
+
+.tile-wall-section {
+  padding: 1rem 0 3rem;
+}
+
+.tile-wall-section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.tile-wall-grid,
+.tile-wall-masonry {
+  position: relative;
+}
+
+.tile-wall-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(16rem, 100%), 1fr));
+  gap: 1.1rem;
+}
+
+.tile-wall-masonry {
+  columns: 18rem;
+  column-gap: 1.1rem;
+}
+
+.tile-wall-masonry .tile-wall-cell {
+  margin-bottom: 1.1rem;
+  break-inside: avoid;
+}
+
+.tile-wall-cell > .delft-tile-scene {
+  width: 100%;
+  max-width: none;
+}
+
+.tile-wall-cell--newest {
+  position: relative;
+}
+
+.tile-wall-cell--newest::before {
+  content: 'Newest';
+  position: absolute;
+  top: 0.85rem;
+  left: 0.85rem;
+  z-index: 3;
+  padding: 0.35rem 0.55rem;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.86);
+  border: 1px solid rgba(42, 77, 143, 0.18);
+  color: #2a4d8f;
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.tile-wall-cell--newest.is-waiting {
+  opacity: 0.42;
+  transform: scale(0.985);
+}
+
+.tile-wall-cell--newest.is-resting {
+  animation: newestTileSettle 780ms cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+
+@keyframes newestTileSettle {
+  0%   { opacity: 0.7; transform: translateY(-10px) scale(1.02); }
+  100% { opacity: 1;   transform: translateY(0) scale(1); }
+}
+
+@media (max-width: 900px) {
+  .tile-wall-section-header { flex-direction: column; align-items: start; }
+}
+
+@media (max-width: 640px) {
+  .tile-wall-hero,
+  .tile-wall-section { width: min(100%, calc(100% - 1rem)); }
+  .tile-wall-copy { border-radius: 20px; }
+  .tile-wall-reveal-layer { min-height: 72vh; padding-top: 1rem; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .tile-wall-reveal-layer,
+  .tile-wall-cell--newest.is-resting {
+    transition: none;
+    animation: none;
+  }
+  .tile-wall-reveal-layer.is-visible,
+  .tile-wall-reveal-layer.is-settling {
+    opacity: 1;
+    transform: none;
+  }
+}
