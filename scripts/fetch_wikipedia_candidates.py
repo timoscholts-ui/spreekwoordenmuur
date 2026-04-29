@@ -1,7 +1,8 @@
 """
 fetch_wikipedia_candidates.py
 Fetches Dutch proverb candidates from nl.wikipedia.org (MediaWiki API).
-Returns a list of clean proverb strings to stdout (JSON array).
+Returns a JSON array of {saying, explanation} objects to stdout.
+The explanation is the <small>...</small> text directly below each proverb on the list page.
 
 Usage:
     python fetch_wikipedia_candidates.py
@@ -53,39 +54,62 @@ def clean_wikitext(text: str) -> str:
     text = re.sub(r"\{\{[^}]*\}\}", "", text)
     text = re.sub(r"<[^>]+>", "", text)
     text = re.sub(r"\s+", " ", text).strip()
-    text = text.strip(" ./")
-    return text
+    return text.strip(" ./")
 
 
-def extract_candidates(wikitext: str) -> list[str]:
-    candidates = []
+def extract_candidates(wikitext: str) -> list[dict]:
+    """
+    Extract proverb candidates with their Wikipedia explanations.
+    Returns list of {saying, explanation} dicts.
+    The explanation is the <small> text immediately following the proverb line.
+    """
+    candidates: list[dict] = []
     seen: set[str] = set()
+    lines = wikitext.splitlines()
 
-    for line in wikitext.splitlines():
+    for i, line in enumerate(lines):
         if not line.startswith("::'"):
             continue
+
         stripped = line.lstrip(": ")
         if stripped.lower().startswith("ook"):
             continue
+
         m = re.search(r"'''(.+?)'''", line)
         if not m:
             continue
-        text = clean_wikitext(m.group(1))
-        if len(text) < MIN_LEN:
+
+        saying = clean_wikitext(m.group(1))
+
+        if len(saying) < MIN_LEN:
             continue
-        if text.startswith("Zie:") or text.startswith("Zie ook"):
+        if saying.startswith("Zie:") or saying.startswith("Zie ook"):
             continue
-        key = text.lower()
+
+        key = saying.lower()
         if key in seen:
             continue
         seen.add(key)
-        candidates.append(text)
+
+        # Look for the Wikipedia explanation in nearby lines (the <small>...</small> block)
+        explanation = ""
+        for j in range(i + 1, min(i + 5, len(lines))):
+            next_line = lines[j]
+            # Stop if we hit the next proverb entry
+            if re.match(r"::'''", next_line):
+                break
+            cleaned = clean_wikitext(next_line)
+            if len(cleaned) > 8:
+                explanation = cleaned
+                break
+
+        candidates.append({"saying": saying, "explanation": explanation})
 
     return candidates
 
 
 def main() -> None:
-    all_candidates: list[str] = []
+    all_candidates: list[dict] = []
 
     for page in PAGES:
         try:
@@ -96,10 +120,10 @@ def main() -> None:
         except Exception as exc:
             print(f"ERROR fetching {page}: {exc}", file=sys.stderr)
 
-    sample = all_candidates[:20]
-    print("\nSample (first 20):", file=sys.stderr)
+    sample = all_candidates[:5]
+    print("\nSample (first 5):", file=sys.stderr)
     for s in sample:
-        print(f"  {s}", file=sys.stderr)
+        print(f"  {s['saying']!r} — {s['explanation'][:60]!r}", file=sys.stderr)
     print(f"\n[{len(all_candidates)} total candidates]", file=sys.stderr)
 
     print(json.dumps(all_candidates, ensure_ascii=False, indent=2))

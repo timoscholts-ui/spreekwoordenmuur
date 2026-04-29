@@ -68,7 +68,8 @@ def is_already_today(index: list[dict]) -> bool:
     return any(e.get("dateISO") == today for e in index)
 
 
-def fetch_candidates() -> list[str]:
+def fetch_candidates() -> list[dict]:
+    """Returns list of {saying, explanation} dicts from Wikipedia."""
     sys.path.insert(0, str(SCRIPT_DIR))
     import fetch_wikipedia_candidates as fwc  # type: ignore[import]
 
@@ -82,9 +83,9 @@ def normalize_key(saying: str) -> str:
     return re.sub(r"[^a-z0-9]", "", saying.lower())
 
 
-def dedupe(candidates: list[str], index: list[dict]) -> list[str]:
+def dedupe(candidates: list[dict], index: list[dict]) -> list[dict]:
     known = {e.get("normalizedKey", "") for e in index}
-    return [c for c in candidates if normalize_key(c) not in known]
+    return [c for c in candidates if normalize_key(c["saying"]) not in known]
 
 
 def make_slug(saying: str, date_iso: str) -> str:
@@ -92,16 +93,21 @@ def make_slug(saying: str, date_iso: str) -> str:
     return f"{date_iso}-{slug}"
 
 
-def call_claude(saying: str) -> dict:
+def call_claude(saying: str, wiki_explanation: str = "") -> dict:
+    context_hint = (
+        f"\nWikipedia explanation (Dutch): \"{wiki_explanation}\"\n"
+        f"Use this as the basis for contextNl and explanationEn — translate/adapt, don't invent."
+        if wiki_explanation else ""
+    )
     prompt = (
-        f"Generate a JSON object for the Dutch proverb: \"{saying}\"\n\n"
+        f"For the Dutch proverb: \"{saying}\"\n"
+        f"{context_hint}\n"
         f"Return ONLY a JSON object with these exact fields:\n"
         f"- saying: the proverb exactly as given\n"
-        f"- literalDunglish: a hilariously literal word-for-word English translation "
-        f"(keep Dutch word order, Louis van Gaal style)\n"
-        f"- contextNl: one natural Dutch sentence using this proverb in context\n"
-        f"- explanationEn: one clear English sentence explaining the meaning\n"
-        f"- type: either \"spreekwoord\" or \"gezegde\"\n\n"
+        f"- literalDunglish: hilariously literal word-for-word English (Louis van Gaal style)\n"
+        f"- contextNl: Dutch explanation/context from Wikipedia above (clean it up if needed)\n"
+        f"- explanationEn: English translation of the Dutch explanation (accurate, not invented)\n"
+        f"- type: \"spreekwoord\" or \"gezegde\"\n\n"
         f"Return ONLY the JSON object. No explanation. No markdown."
     )
 
@@ -181,11 +187,15 @@ def main() -> None:
     final_record: dict | None = None
     chosen_saying: str = ""
 
-    for i, saying in enumerate(candidates[:MAX_CANDIDATES_TO_TRY], 1):
+    for i, candidate in enumerate(candidates[:MAX_CANDIDATES_TO_TRY], 1):
+        saying = candidate["saying"]
+        wiki_explanation = candidate.get("explanation", "")
         log.info(f"--- Trying candidate {i}/{min(len(candidates), MAX_CANDIDATES_TO_TRY)}: '{saying}' ---")
+        if wiki_explanation:
+            log.info(f"    Wikipedia explanation: {wiki_explanation[:80]}")
         for attempt in range(1, MAX_ATTEMPTS_PER_CANDIDATE + 1):
             try:
-                record = call_claude(saying)
+                record = call_claude(saying, wiki_explanation)
                 validate(record)
                 log.info(f"Output validated on attempt {attempt}")
                 final_record = record
