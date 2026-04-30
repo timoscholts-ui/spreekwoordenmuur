@@ -25,12 +25,15 @@
 }
 
 /* iOS Safari: backface-visibility is unreliable inside preserve-3d contexts.
-   Force-hide the inactive face using visibility so text can never bleed through. */
+   Delay visibility:hidden by half the flip duration (350ms) so the face stays
+   visible until it is edge-on, giving a smooth start AND end to every flip. */
 .delft-tile-card:not(.is-flipped) .delft-tile-back {
   visibility: hidden;
+  transition: visibility 0s linear 350ms;
 }
 .delft-tile-card.is-flipped .delft-tile-front {
   visibility: hidden;
+  transition: visibility 0s linear 350ms;
 }
 
 /* ── Face (shared) ── */

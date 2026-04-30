@@ -182,16 +182,16 @@ body {
 .tile-wall-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(min(16rem, 100%), 1fr));
-  gap: 1.1rem;
+  gap: 0.55rem;
 }
 
 .tile-wall-masonry {
   columns: 18rem;
-  column-gap: 1.1rem;
+  column-gap: 0.55rem;
 }
 
 .tile-wall-masonry .tile-wall-cell {
-  margin-bottom: 1.1rem;
+  margin-bottom: 0.55rem;
   break-inside: avoid;
 }
 
