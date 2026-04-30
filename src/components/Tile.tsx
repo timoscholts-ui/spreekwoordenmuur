@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from 'react';
+import { useEffect, useId, useRef, useState } from 'react';
 import './delft-tile.css';
 
 export type DelftTileData = {
@@ -13,6 +13,12 @@ export type DelftTileData = {
 const C = '#1e3d72';
 
 function TileBorder() {
+  const uid = useId().replace(/:/g, '');
+  const gGloss  = `g-${uid}`;
+  const gSheen  = `s-${uid}`;
+  const gBevH   = `bh-${uid}`;
+  const gBevS   = `bs-${uid}`;
+
   return (
     <svg
       className="delft-tile-border"
@@ -20,14 +26,51 @@ function TileBorder() {
       xmlns="http://www.w3.org/2000/svg"
       aria-hidden="true"
     >
+      <defs>
+        {/* Bevel highlight — top-left corner fades toward bottom-right */}
+        <linearGradient id={gBevH} x1="0%" y1="0%" x2="100%" y2="100%">
+          <stop offset="0%"   stopColor="white" stopOpacity="0.92" />
+          <stop offset="60%"  stopColor="white" stopOpacity="0.28" />
+          <stop offset="100%" stopColor="white" stopOpacity="0.06" />
+        </linearGradient>
+
+        {/* Bevel shadow — bottom-right corner deepens toward corner */}
+        <linearGradient id={gBevS} x1="0%" y1="0%" x2="100%" y2="100%">
+          <stop offset="0%"   stopColor="#1e3d72" stopOpacity="0.00" />
+          <stop offset="55%"  stopColor="#1e3d72" stopOpacity="0.04" />
+          <stop offset="100%" stopColor="#1e3d72" stopOpacity="0.16" />
+        </linearGradient>
+
+        {/* Gloss — soft oval highlight from upper-left, like a light source overhead */}
+        <radialGradient id={gGloss} cx="30%" cy="22%" r="62%" fx="22%" fy="14%">
+          <stop offset="0%"   stopColor="white" stopOpacity="0.55" />
+          <stop offset="38%"  stopColor="white" stopOpacity="0.14" />
+          <stop offset="72%"  stopColor="white" stopOpacity="0.03" />
+          <stop offset="100%" stopColor="white" stopOpacity="0.00" />
+        </radialGradient>
+
+        {/* Sheen — faint diagonal surface shimmer */}
+        <linearGradient id={gSheen} x1="0%" y1="0%" x2="100%" y2="100%">
+          <stop offset="0%"   stopColor="white"   stopOpacity="0.18" />
+          <stop offset="42%"  stopColor="white"   stopOpacity="0.03" />
+          <stop offset="100%" stopColor="#1e3d72" stopOpacity="0.04" />
+        </linearGradient>
+      </defs>
+
       {/* Porcelain tile body */}
       <rect width="400" height="400" fill="#f8faff" />
 
-      {/* Bevel — top and left highlight */}
-      <path d="M 0,0 L 400,0 L 380,20 L 20,20 L 20,380 L 0,400 Z" fill="rgba(255,255,255,0.6)" />
+      {/* Bevel — top and left, gradient highlight */}
+      <path d="M 0,0 L 400,0 L 380,20 L 20,20 L 20,380 L 0,400 Z" fill={`url(#${gBevH})`} />
 
-      {/* Bevel — bottom and right shadow */}
-      <path d="M 400,0 L 400,400 L 0,400 L 20,380 L 380,380 L 380,20 Z" fill="rgba(18,30,56,0.07)" />
+      {/* Bevel — bottom and right, gradient shadow */}
+      <path d="M 400,0 L 400,400 L 0,400 L 20,380 L 380,380 L 380,20 Z" fill={`url(#${gBevS})`} />
+
+      {/* Gloss overlay — porcelain light reflection */}
+      <rect width="400" height="400" fill={`url(#${gGloss})`} />
+
+      {/* Surface sheen — subtle diagonal shimmer across the whole face */}
+      <rect width="400" height="400" fill={`url(#${gSheen})`} />
 
       {/* Top scrollwork — center y=32, oscillates y=25..39, clear of 20px bevel */}
       <path
