@@ -174,5 +174,115 @@
     "explanationEn": "After hard times, better ones always follow. One of the most comforting Dutch sayings: every setback has its end, and sunshine follows every storm.",
     "type": "spreekwoord",
     "askPerplexityUrl": "https://www.perplexity.ai/search?q=Na+regen+komt+zonneschijn+spreekwoord+betekenis"
+  },
+  {
+    "dateISO": "2026-04-04",
+    "dateDisplay": "04/04/26",
+    "saying": "De aanhouder wint",
+    "literalDunglish": "The persister wins",
+    "contextNl": "Als je volhoudt en niet opgeeft, bereik je uiteindelijk je doel. Doorzettingsvermogen wordt altijd beloond.",
+    "explanationEn": "If you keep going and don't give up, you will eventually reach your goal. Perseverance always pays off.",
+    "type": "spreekwoord",
+    "id": "2026-04-04-de-aanhouder-wint",
+    "askPerplexityUrl": "https://www.perplexity.ai/search?q=De%20aanhouder%20wint%20spreekwoord%20betekenis"
+  },
+  {
+    "dateISO": "2026-04-05",
+    "dateDisplay": "05/04/26",
+    "saying": "Oefening baart kunst",
+    "literalDunglish": "Practice gives birth to art",
+    "contextNl": "Door te oefenen word je ergens beter in. Talent alleen is niet genoeg — het is de herhaling die meesterschap brengt.",
+    "explanationEn": "Practice makes perfect. Talent alone is not enough — it is repetition that brings mastery.",
+    "type": "spreekwoord",
+    "id": "2026-04-05-oefening-baart-kunst",
+    "askPerplexityUrl": "https://www.perplexity.ai/search?q=Oefening%20baart%20kunst%20spreekwoord%20betekenis"
+  },
+  {
+    "dateISO": "2026-04-06",
+    "dateDisplay": "06/04/26",
+    "saying": "Rome is niet in één dag gebouwd",
+    "literalDunglish": "Rome was not built in one day",
+    "contextNl": "Grote dingen kosten tijd. Je hoeft niet alles meteen perfect te doen — geduld en stap voor stap werken leiden tot het beste resultaat.",
+    "explanationEn": "Great things take time. You don't have to do everything perfectly at once — patience and steady effort lead to the best results.",
+    "type": "spreekwoord",
+    "id": "2026-04-06-rome-is-niet-in-n-dag-gebouwd",
+    "askPerplexityUrl": "https://www.perplexity.ai/search?q=Rome%20is%20niet%20in%20%C3%A9%C3%A9n%20dag%20gebouwd%20spreekwoord%20betekenis"
+  },
+  {
+    "dateISO": "2026-04-07",
+    "dateDisplay": "07/04/26",
+    "saying": "Wie A zegt, moet ook B zeggen",
+    "literalDunglish": "Who says A must also say B",
+    "contextNl": "Als je ergens aan begint, moet je het ook afmaken. Je kunt niet halverwege stoppen als je eenmaal een keuze hebt gemaakt.",
+    "explanationEn": "If you start something, you must see it through. You cannot stop halfway once you have made a commitment.",
+    "type": "spreekwoord",
+    "id": "2026-04-07-wie-a-zegt-moet-ook-b-zeggen",
+    "askPerplexityUrl": "https://www.perplexity.ai/search?q=Wie%20A%20zegt%2C%20moet%20ook%20B%20zeggen%20spreekwoord%20betekenis"
+  },
+  {
+    "dateISO": "2026-04-08",
+    "dateDisplay": "08/04/26",
+    "saying": "Door de bomen het bos niet meer zien",
+    "literalDunglish": "To no longer see the forest because of the trees",
+    "contextNl": "Het overzicht kwijt zijn door te veel details. Als je te diep in de kleine dingen zit, verlies je het grote geheel uit het oog.",
+    "explanationEn": "To lose the big picture because of too many details. When you are too deep in the specifics, you can no longer see the whole.",
+    "type": "gezegde",
+    "id": "2026-04-08-door-de-bomen-het-bos-niet-meer-zien",
+    "askPerplexityUrl": "https://www.perplexity.ai/search?q=Door%20de%20bomen%20het%20bos%20niet%20meer%20zien%20spreekwoord%20betekenis"
+  },
+  {
+    "dateISO": "2026-04-09",
+    "dateDisplay": "09/04/26",
+    "saying": "Met vallen en opstaan",
+    "literalDunglish": "With falling and getting up",
+    "contextNl": "Leren en doorgaan, ook als het soms moeilijk gaat. Fouten maken is een normaal onderdeel van groei — het gaat erom dat je steeds weer opstaat.",
+    "explanationEn": "Learning and carrying on, even when things are difficult. Making mistakes is a normal part of growth — what matters is that you always get back up.",
+    "type": "gezegde",
+    "id": "2026-04-09-met-vallen-en-opstaan",
+    "askPerplexityUrl": "https://www.perplexity.ai/search?q=Met%20vallen%20en%20opstaan%20spreekwoord%20betekenis"
+  },
+  {
+    "dateISO": "2026-04-10",
+    "dateDisplay": "10/04/26",
+    "saying": "De boog kan niet altijd gespannen zijn",
+    "literalDunglish": "The bow cannot always be drawn",
+    "contextNl": "Je kunt niet altijd hard werken — rust is ook belangrijk. Wie nooit ontspant, raakt uitgeput. Een goede boogschutter weet wanneer te pauzeren.",
+    "explanationEn": "You cannot always work hard — rest is equally important. Those who never relax will burn out. A good archer knows when to pause.",
+    "type": "spreekwoord",
+    "id": "2026-04-10-de-boog-kan-niet-altijd-gespannen-zijn",
+    "askPerplexityUrl": "https://www.perplexity.ai/search?q=De%20boog%20kan%20niet%20altijd%20gespannen%20zijn%20spreekwoord%20betekenis"
+  },
+  {
+    "dateISO": "2026-04-11",
+    "dateDisplay": "11/04/26",
+    "saying": "Een appeltje voor de dorst",
+    "literalDunglish": "A little apple for the thirst",
+    "contextNl": "Iets achter de hand houden voor later, zoals geld of energie. Slim vooruitdenken zorgt ervoor dat je niet zonder zit als het nodig is.",
+    "explanationEn": "Keeping something in reserve for later, like money or energy. Thinking ahead ensures you are never caught without what you need.",
+    "type": "spreekwoord",
+    "id": "2026-04-11-een-appeltje-voor-de-dorst",
+    "askPerplexityUrl": "https://www.perplexity.ai/search?q=Een%20appeltje%20voor%20de%20dorst%20spreekwoord%20betekenis"
+  },
+  {
+    "dateISO": "2026-04-12",
+    "dateDisplay": "12/04/26",
+    "saying": "Ze heeft het hart op de juiste plaats",
+    "literalDunglish": "She has her heart in the right place",
+    "contextNl": "Iemand is een goed en vriendelijk persoon, met de juiste bedoelingen. Zelfs als dingen niet perfect gaan, is haar intentie altijd oprecht.",
+    "explanationEn": "Someone is a good and kind person with the right intentions. Even when things don't go perfectly, their heart is always in the right place.",
+    "type": "gezegde",
+    "id": "2026-04-12-ze-heeft-het-hart-op-de-juiste-plaats",
+    "askPerplexityUrl": "https://www.perplexity.ai/search?q=Ze%20heeft%20het%20hart%20op%20de%20juiste%20plaats%20spreekwoord%20betekenis"
+  },
+  {
+    "dateISO": "2026-04-13",
+    "dateDisplay": "13/04/26",
+    "saying": "Ik zie door de bomen het bos niet meer… maar gelukkig was er koffie!",
+    "literalDunglish": "I can no longer see the forest for the trees… but luckily there was coffee!",
+    "contextNl": "Soms is alles even verwarrend en overweldigend. Maar met een beetje humor — en een goede kop koffie — kom je er altijd wel doorheen.",
+    "explanationEn": "Sometimes everything feels confusing and overwhelming. But with a little humour — and a good cup of coffee — you always get through it.",
+    "type": "gezegde",
+    "id": "2026-04-13-ik-zie-door-de-bomen-het-bos-niet-meer-m",
+    "askPerplexityUrl": "https://www.perplexity.ai/search?q=Ik%20zie%20door%20de%20bomen%20het%20bos%20niet%20meer%E2%80%A6%20maar%20gelukkig%20was%20er%20koffie%21%20spreekwoord%20betekenis"
   }
 ]

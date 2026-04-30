@@ -65,8 +65,8 @@ export function TileWallPage({
         </div>
       </section>
 
-      {/* Big overlay — visible during animation, then fades */}
-      {newest && (
+      {/* Big overlay — only rendered during animation; unmounts on wall phase to reclaim layout space */}
+      {newest && phase !== 'wall' && (
         <div
           className={[
             'tile-wall-reveal-layer',
@@ -75,7 +75,6 @@ export function TileWallPage({
           ]
             .filter(Boolean)
             .join(' ')}
-          aria-hidden={phase === 'wall'}
         >
           <div className="tile-wall-reveal-shell">
             <p className="tile-wall-reveal-label">Tegel van vandaag</p>
