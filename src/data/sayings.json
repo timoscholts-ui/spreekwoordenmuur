@@ -284,5 +284,27 @@
     "type": "gezegde",
     "id": "2026-04-13-ik-zie-door-de-bomen-het-bos-niet-meer-m",
     "askPerplexityUrl": "https://www.perplexity.ai/search?q=Ik%20zie%20door%20de%20bomen%20het%20bos%20niet%20meer%E2%80%A6%20maar%20gelukkig%20was%20er%20koffie%21%20spreekwoord%20betekenis"
+  },
+  {
+    "id": "2026-05-05-broodvrienden-zijn-geen-noodvrienden",
+    "dateISO": "2026-05-05",
+    "dateDisplay": "05/05/26",
+    "saying": "Broodvrienden zijn geen noodvrienden",
+    "literalDunglish": "Bread-friends are no need-friends",
+    "contextNl": "Vrienden die er alleen zijn als het goed gaat — die mee-eten aan jouw tafel — verdwijnen zodra je ze echt nodig hebt. Het spreekwoord waarschuwt: onderscheid echte vrienden van degenen die alleen profiteren van je welstand.",
+    "explanationEn": "Fair-weather friends who enjoy your company when times are good will not be there when you truly need help. True friendship is tested in hardship, not at the dinner table.",
+    "type": "spreekwoord",
+    "askPerplexityUrl": "https://www.perplexity.ai/search?q=Broodvrienden+zijn+geen+noodvrienden+spreekwoord+betekenis"
+  },
+  {
+    "id": "2026-05-04-zelfs-de-beste-breister-laat-weleens-een",
+    "dateISO": "2026-05-04",
+    "dateDisplay": "04/05/26",
+    "saying": "Zelfs de beste breister laat weleens een steekje vallen",
+    "literalDunglish": "Even the best knitter sometimes drops a stitch",
+    "contextNl": "Iedereen maakt wel eens een fout, hoe ervaren of bekwaam iemand ook is. Het spreekwoord troost en relativeert: fouten zijn menselijk, ook bij de allerbesten.",
+    "explanationEn": "Even the most skilled person makes mistakes sometimes. Nobody is perfect — errors are human, no matter how experienced you are.",
+    "type": "spreekwoord",
+    "askPerplexityUrl": "https://www.perplexity.ai/search?q=Zelfs+de+beste+breister+laat+weleens+een+steekje+vallen+spreekwoord+betekenis"
   }
 ]
