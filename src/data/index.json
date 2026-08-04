@@ -138,5 +138,175 @@
     "id": "2026-05-04-zelfs-de-beste-breister-laat-weleens-een",
     "normalizedKey": "zelfsdebestebreisterlaatweleenseensteekjevallen",
     "dateISO": "2026-05-04"
+  },
+  {
+    "id": "2026-05-06-wie-het-dichtst-bij-het-vuur-zit-warmt-zich-het-meest",
+    "normalizedKey": "wiehetdichtstbijhetvuurzitwarmtzichhetmeest",
+    "dateISO": "2026-05-06"
+  },
+  {
+    "id": "2026-05-07-wat-niet-weet-wat-niet-deert",
+    "normalizedKey": "watnietweetwatnietdeert",
+    "dateISO": "2026-05-07"
+  },
+  {
+    "id": "2026-05-08-onder-de-hamer",
+    "normalizedKey": "onderdehamer",
+    "dateISO": "2026-05-08"
+  },
+  {
+    "id": "2026-05-09-iemands-bloed-kunnen-drinken",
+    "normalizedKey": "iemandsbloedkunnendrinken",
+    "dateISO": "2026-05-09"
+  },
+  {
+    "id": "2026-05-10-goede-naam-is-beter-dan-goede-olie",
+    "normalizedKey": "goedenaamisbeterdangoedeolie",
+    "dateISO": "2026-05-10"
+  },
+  {
+    "id": "2026-05-11-wat-de-boer-niet-kent-dat-vreet-hij-niet",
+    "normalizedKey": "watdeboernietkentdatvreethijniet",
+    "dateISO": "2026-05-11"
+  },
+  {
+    "id": "2026-05-12-een-kruimeltje-is-ook-brood",
+    "normalizedKey": "eenkruimeltjeisookbrood",
+    "dateISO": "2026-05-12"
+  },
+  {
+    "id": "2026-05-19-een-ezel-stoot-zich-in-het-algemeen-niet",
+    "normalizedKey": "eenezelsstootzichinhetalgemeenniettweemaalaandezelfdesteen",
+    "dateISO": "2026-05-19"
+  },
+  {
+    "id": "2026-05-20-tijd-is-geld",
+    "normalizedKey": "tijdisgeld",
+    "dateISO": "2026-05-20"
+  },
+  {
+    "id": "2026-05-21-honger-is-de-beste-kok",
+    "normalizedKey": "hongerisdebestekok",
+    "dateISO": "2026-05-21"
+  },
+  {
+    "id": "2026-05-22-beter-laat-dan-nooit",
+    "normalizedKey": "beterlaatdannooit",
+    "dateISO": "2026-05-22"
+  },
+  {
+    "id": "2026-05-23-water-loopt-altijd-naar-de-zee",
+    "normalizedKey": "waterlooptaltijdnaardezee",
+    "dateISO": "2026-05-23"
+  },
+  {
+    "id": "2026-05-24-klagers-hebben-geen-nood-en-pochers-hebben-geen-brood",
+    "normalizedKey": "klagershebbengeennoodenpochershebbengeenbrood",
+    "dateISO": "2026-05-24"
+  },
+  {
+    "id": "2026-05-25-het-leven-is-net-een-krentenbol",
+    "normalizedKey": "hetlevenisneteenkrentenbolmetafteneeenhardstukje",
+    "dateISO": "2026-05-25"
+  },
+  {
+    "id": "2026-05-26-men-moet-zijn-bed-maken-zoals-men-slapen-wil",
+    "normalizedKey": "menmoetzijnbedmakenzoalsmenslapenwil",
+    "dateISO": "2026-05-26"
+  },
+  {
+    "id": "2026-05-28-of-je-nu-rent-als-een-haas-of-kruipt-als-een-slak",
+    "normalizedKey": "ofjenurentalseenhaasofkruiptalseenslaknieuwjaarblijftop1januari",
+    "dateISO": "2026-05-28"
+  },
+  {
+    "id": "2026-05-29-geen-zo-kleine-sant-of-hij-wil-zijn-kaars-hebben",
+    "normalizedKey": "geenzokleinesantofhijwilzijnkaarshebben",
+    "dateISO": "2026-05-29"
+  },
+  {
+    "id": "2026-05-30-vele-handen-maken-licht-werk",
+    "normalizedKey": "velehandenmakenlichtwerk",
+    "dateISO": "2026-05-30"
+  },
+  {
+    "id": "2026-06-01-boontje-komt-om-zijn-loontje",
+    "normalizedKey": "boontjekomtomzijnloontje",
+    "dateISO": "2026-06-01"
+  },
+  {
+    "id": "2026-06-02-een-goede-daad-is-goud-waard",
+    "normalizedKey": "eengoededaaadisgoudwaard",
+    "dateISO": "2026-06-02"
+  },
+  {
+    "id": "2026-06-04-hij-heeft-de-klok-wel-horen-luiden",
+    "normalizedKey": "hijheeftdeklokwelhorenluidenmaarweetnietwaardeklepelhangt",
+    "dateISO": "2026-06-04"
+  },
+  {
+    "id": "2026-06-06-de-kaars-uit-de-schaamte-uit",
+    "normalizedKey": "dekaarsuitdeschaamteuit",
+    "dateISO": "2026-06-06"
+  },
+  {
+    "id": "2026-06-07-eigen-haard-is-goud-waard",
+    "normalizedKey": "eigenhaardisgoudwaard",
+    "dateISO": "2026-06-07"
+  },
+  {
+    "id": "2026-06-08-een-man-een-man-een-woord-een-woord",
+    "normalizedKey": "eenmaneenmaneenwoordeenwoord",
+    "dateISO": "2026-06-08"
+  },
+  {
+    "id": "2026-06-09-wie-het-eerst-komt-het-eerst-maalt",
+    "normalizedKey": "wieheteerstkomtheteerstmaalt",
+    "dateISO": "2026-06-09"
+  },
+  {
+    "id": "2026-06-10-alle-hout-is-nog-geen-timmerhout",
+    "normalizedKey": "allehoutisnoggeentimmerhout",
+    "dateISO": "2026-06-10"
+  },
+  {
+    "id": "2026-06-13-een-ongeluk-komt-zelden-alleen",
+    "normalizedKey": "eenongelukkomtzeldenalleen",
+    "dateISO": "2026-06-13"
+  },
+  {
+    "id": "2026-06-14-een-goed-begin-is-het-halve-werk",
+    "normalizedKey": "eengoedbeginishethalvewerk",
+    "dateISO": "2026-06-14"
+  },
+  {
+    "id": "2026-06-15-beter-ermee-verlegen-dan-erom-verlegen",
+    "normalizedKey": "beterermeeverlegendaneromverlegen",
+    "dateISO": "2026-06-15"
+  },
+  {
+    "id": "2026-06-29-de-pen-is-machtiger-dan-het-zwaard",
+    "normalizedKey": "depenismachtigerdanhetzwaard",
+    "dateISO": "2026-06-29"
+  },
+  {
+    "id": "2026-07-09-komt-tijd-komt-raad",
+    "normalizedKey": "komttijdkomtraad",
+    "dateISO": "2026-07-09"
+  },
+  {
+    "id": "2026-07-14-het-is-niet-alles-goud-wat-er-blinkt",
+    "normalizedKey": "hetisnietallesgoudwaterblinkt",
+    "dateISO": "2026-07-14"
+  },
+  {
+    "id": "2026-07-15-na-gedane-arbeid-is-het-goed-rusten",
+    "normalizedKey": "nagedanearbeidishetgoedrusten",
+    "dateISO": "2026-07-15"
+  },
+  {
+    "id": "2026-08-04-morgen-gaat-het-beter",
+    "normalizedKey": "morgengaathetbeter",
+    "dateISO": "2026-08-04"
   }
 ]
