@@ -680,5 +680,16 @@
     "explanationEn": "A Dutch expression of hope and resilience — used to comfort someone after a setback or to encourage oneself, suggesting that today's troubles will be lighter or resolved tomorrow.",
     "type": "gezegde",
     "askPerplexityUrl": "https://www.perplexity.ai/search?q=Morgen%20gaat%20het%20beter%20spreekwoord%20betekenis"
+  },
+  {
+    "id": "2026-08-14-als-het-water-zakt-kraakt-het-ijs",
+    "dateISO": "2026-08-14",
+    "dateDisplay": "14/08/26",
+    "saying": "Als het water zakt, kraakt het ijs",
+    "literalDunglish": "When the water drops, the ice cracks",
+    "contextNl": "IJs drijft op het water en wordt daardoor gedragen; zakt het waterpeil, dan verliest het ijs zijn steun en barst het. Figuurlijk: wanneer de omstandigheden verslechteren of de steun wegvalt, komen verborgen spanningen en zwakheden aan het licht — elke oorzaak heeft een gevolg.",
+    "explanationEn": "Ice floats on and is supported by the water beneath it; when the water level drops, the ice loses that support and cracks. Figuratively: when conditions worsen or support is withdrawn, hidden tensions and weaknesses surface — every cause has an effect.",
+    "type": "spreekwoord",
+    "askPerplexityUrl": "https://www.perplexity.ai/search?q=Als%20het%20water%20zakt%2C%20kraakt%20het%20ijs%20spreekwoord%20betekenis"
   }
 ]
