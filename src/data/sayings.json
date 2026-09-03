@@ -834,5 +834,16 @@
     "explanationEn": "In May almost all birds lay their eggs, the peak of the nesting season. The saying marks the arrival of spring and the return of life; figuratively, everything happens in its own good time.",
     "type": "gezegde",
     "askPerplexityUrl": "https://www.perplexity.ai/search?q=In%20mei%20leggen%20alle%20vogeltjes%20een%20ei%20spreekwoord%20betekenis"
+  },
+  {
+    "id": "2026-09-03-wie-bang-leeft-gaat-ook-bang-dood",
+    "dateISO": "2026-09-03",
+    "dateDisplay": "03/09/26",
+    "saying": "Wie bang leeft, gaat ook bang dood",
+    "literalDunglish": "Who afraid lives, goes also afraid dead",
+    "contextNl": "Iemand die zijn hele leven in angst doorbrengt, zal ook in angst sterven. Het spreekwoord waarschuwt tegen een leven vol vrees en spoort aan om moed te tonen in plaats van je door angst te laten leiden.",
+    "explanationEn": "Someone who spends their whole life in fear will also die in fear — a warning against a fearful existence and an encouragement to face life with courage.",
+    "type": "spreekwoord",
+    "askPerplexityUrl": "https://www.perplexity.ai/search?q=Wie%20bang%20leeft%2C%20gaat%20ook%20bang%20dood%20spreekwoord%20betekenis"
   }
 ]
