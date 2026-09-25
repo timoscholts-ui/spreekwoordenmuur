@@ -1010,5 +1010,27 @@
     "explanationEn": "If it doesn't help, it does no harm either. The proverb justifies trying a remedy or approach whose benefit is uncertain but which is certain not to cause damage — when in doubt, you might as well try.",
     "type": "spreekwoord",
     "askPerplexityUrl": "https://www.perplexity.ai/search?q=Baat%20het%20niet%2C%20het%20schaadt%20ook%20niet%20spreekwoord%20betekenis"
+  },
+  {
+    "id": "2026-09-24-zonder-strijd-geen-overwinning",
+    "dateISO": "2026-09-24",
+    "dateDisplay": "24/09/26",
+    "saying": "Zonder strijd, geen overwinning",
+    "literalDunglish": "Without struggle, no victory",
+    "contextNl": "Wie iets waardevols wil bereiken, moet daar moeite voor doen en tegenslagen durven aangaan. Niets van betekenis komt vanzelf; pas door inzet en doorzettingsvermogen wordt succes behaald.",
+    "explanationEn": "Nothing worthwhile is achieved without effort and the willingness to face hardship — victory only comes to those who are prepared to fight for it.",
+    "type": "spreekwoord",
+    "askPerplexityUrl": "https://www.perplexity.ai/search?q=Zonder%20strijd%20geen%20overwinning%20spreekwoord%20betekenis"
+  },
+  {
+    "id": "2026-09-25-pluk-de-dag-carpe-diem",
+    "dateISO": "2026-09-25",
+    "dateDisplay": "25/09/26",
+    "saying": "Pluk de dag. (Carpe diem.)",
+    "literalDunglish": "Pluck the day. (Carpe diem.)",
+    "contextNl": "Een aansporing om van het huidige moment te genieten en het leven niet uit te stellen. Het is de Nederlandse vertaling van het Latijnse 'carpe diem', afkomstig uit de Oden van de Romeinse dichter Horatius: benut de dag en vertrouw zo min mogelijk op morgen.",
+    "explanationEn": "An encouragement to enjoy the present moment and not postpone living. It is the Dutch rendering of the Latin 'carpe diem' from the Odes of the Roman poet Horace: seize the day and trust as little as possible in tomorrow.",
+    "type": "gezegde",
+    "askPerplexityUrl": "https://www.perplexity.ai/search?q=Pluk%20de%20dag.%20%28Carpe%20diem.%29%20spreekwoord%20betekenis"
   }
 ]
